@@ -3,6 +3,7 @@
   --main-white: #F2F7F6;
   --secondary-blue: #A8D2DC;
   --main-yellow: #FFFA6C;
+  --main-pink: #F7567C;
 }
 
 html {
@@ -38,25 +39,125 @@ img {
 
 /* Nav */
 
+/* Hamburger Nav HTML/CSS referenced from Erik Terwan (Nov 24, 2015) at https://codepen.io/erikterwan/pen/EVzeRP */
+.hamburger-nav {
+    padding: 0rem;
+    height: 0rem;
+    background: var(--main-yellow);
+    color: var(--main-blue);
+}
+
+#menu-toggle {
+    display: block;
+    position: relative;
+    top: 5rem;
+    margin-left: 5rem; 
+    z-index: 1;
+}
+
+#menu-toggle a {
+    color: var(--main-blue);
+    transition: color 0.3s ease;
+}
+
+#menu-toggle a:hover {
+    color: var(--main-pink);
+}
+
+#menu-toggle input {
+    display: block;
+    width: 6rem;
+    height: 5.5rem;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+#menu-toggle span {
+    display: block;
+    width: 5rem;
+    height: 0.6rem;
+    margin-bottom: 1rem;
+    position: relative;
+    background: var(--main-yellow);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+#menu-toggle span: first-child {
+    transform-origin: 0% 0%;
+}
+
+#menu-toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menu-toggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: var(--main-blue);
+}
+
+#menu-toggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu-toggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#hamburger-menu {
+    position: absolute;
+    width: 30rem;
+    margin: -10rem; 0 0 -5rem;
+    padding: 10rem;
+    padding-top: 12.5rem;
+    background: var(--main-yellow);
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#hamburger-menu li {
+    padding: 1rem 0;
+    font-size: 4rem;
+}
+
+#menu-toggle input:checked ~ ul {
+    transform: none;
+}
+
+
+
+/* Traditional Nav (hidden on mobile) */
 .nav {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: flex-end;
   background: var(--main-yellow);
   color: var(--main-blue);
 }
 
-.nav-list {
+.nav-menu {
   display: flex;
   margin-right: 2rem;
 }
 
-.nav-list a:hover {
+.nav-menu a:hover {
   background: #FFFED6;
   border-radius: 5px;
 }
 
-.nav-list a {
+.nav-menu a {
   display: block;
   padding: 2rem;
   font-size: 2.5rem;
@@ -184,13 +285,9 @@ input {
     width: 15rem;
     font-size: 3rem;
     font-family: inherit;
-    background: #F7567C;
+    background: var(--main-pink);
     color: var(--main-white);
     border-radius: 15px;
-}
-
-.contact-details:hover {
-  transform: translateY(8px); 
 }
 
 /* Footer */
@@ -214,6 +311,11 @@ footer {
   text-shadow: 2px 2px 1px #404006;  
 }
 
+.contact-icon:hover {
+  transform: translateY(8px); 
+  color: var(--main-pink);
+}
+
 .footer-top {
     display: flex;
     justify-content: center;
@@ -224,5 +326,11 @@ footer {
 
 .footer-top-arrow {
     margin: 2rem auto auto auto;
+    transition: transform 0.3s ease-out;
     color: var(--main-yellow);
+}
+
+.footer-top-arrow:hover {
+    transform: translateY(8px); 
+    color: var(--main-pink);
 }
