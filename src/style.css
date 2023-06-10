@@ -10,27 +10,16 @@ html {
   scroll-behavior: smooth:
 }
 
+* {
+   font-family: 'Poppins', sans-serif; 
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  line-height: 1.4;
   margin: 0;
+  line-height: 1.4;
+  scroll-behavior: smooth:
+  font-size: 1.8rem;
   color: var(--main-yellow);
-}
-
-h1,
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 3rem;
 }
 
 ul {
@@ -47,7 +36,7 @@ img {
   width: 20%
 }
 
-/* nav */
+/* Nav */
 
 .nav {
   display: flex;
@@ -69,14 +58,15 @@ img {
 
 .nav-list a {
   display: block;
-  font-size: 2.5rem;
   padding: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
-/* Welcome Section */
 
-.welcome-section {
+/* Welcome */
+
+.welcome {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,25 +76,29 @@ img {
   background-color: var(--main-blue);
 }
 
-.welcome-section p {
+.welcome h1 {
+    font-size: 6rem;
+}
+
+.welcome p {
   font-size: 3rem;
   font-weight: 300;
   font-style: italic;
   color: var(--main-white);
 }
 
-/* Projects Section */
+/* Projects */
 
 .gallery {
-    padding: 0 0 2vw 0;
+  padding: 0 0 2vw 0;
   border-top: 1px solid #E8D7FF;
   background: var(--main-white);
 }
 
 .gallery h3 {
-  color: var(--main-blue);
-  font-size: 10vw;
   text-align: center;
+  font-size: 10vw;
+  color: var(--main-blue);
 }
 
 .card {
@@ -112,22 +106,20 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    overflow: hidden;
     height: 100%;
     width: 100%;
-    border-radius: 4px;
-    overflow: hidden;
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    font-size: 3rem;
+    border-radius: 4px;
 }
 
 .photo-grid {
     display: grid;
     gap: 1rem;
-    
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-auto-rows: 240px;
 }
@@ -143,27 +135,28 @@ a.overclick:hover {
     opacity: 0.12;
 }
 
-/* Contact Me */
+/* About */
 
-.contactme-section {
-  background: var(--main-blue);
+
+
+
+
+/* Contact */
+
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: var(--main-blue);  
 }
 
-.contactme-section h2 {
+.contact-header {
     font-size: 4rem;
-}
-
-.contactme-section a {
-  padding: 1rem;
 }
 
 form {
     width: 60rem;
-    font-family: 'Poppins', sans-serif;
 }
 
 .form-group {
@@ -171,28 +164,30 @@ form {
 }
 
 input {
-    border-radius: 10px;
     height: 7rem;
     width: 100%;
     font-size: 3rem;
+    border-radius: 10px;
 }
 
 #input-message {
-    border-radius: 10px;
     height: 30rem;
     width: 100%;
     font-size: 3rem;
     font-family: inherit;
+    border-radius: 10px;
 }
 
 #form-submit {
-    height: 5rem;
-    width: 10rem;
-    font-size: 2.5rem;
+    margin: auto auto 1rem 2rem;
+    height: 7rem;
+    width: 15rem;
+    font-size: 3rem;
     font-family: inherit;
+    background: #F7567C;
+    color: var(--main-white);
+    border-radius: 15px;
 }
-
-
 
 .contact-details:hover {
   transform: translateY(8px); 
@@ -205,31 +200,29 @@ footer {
   color: var(--main-blue);
 }
 
-
-
 .contact-links {
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
 }
 
-.contact-details {
+.contact-icon {
+  margin: 2rem 3rem 2rem 3rem;
+  transition: transform 0.3s ease-out;
   color: var(--main-blue);
   font-size: 5rem;
-  text-shadow: 2px 2px 1px #404006;
-  transition: transform 0.3s ease-out;
-  margin: 2rem 3rem 2rem 3rem;
+  text-shadow: 2px 2px 1px #404006;  
 }
 
 .footer-top {
-    background: var(--main-blue);
-    font-size: 5rem;
     display: flex;
     justify-content: center;
     height: 9rem;
+    background: var(--main-blue);
+    font-size: 5rem;
 }
 
 .footer-top-arrow {
+    margin: 2rem auto auto auto;
     color: var(--main-yellow);
-    margin: 3rem auto auto auto;
 }
