@@ -116,9 +116,9 @@ img {
 
 #hamburger-menu {
     position: absolute;
-    width: 30rem;
-    margin: -10rem; 0 0 -5rem;
-    padding: 10rem;
+    width: 46.22rem;
+    margin: -10rem 0 0 -10rem;
+    padding: 0 10rem 5rem 10rem;
     padding-top: 12.5rem;
     background: var(--main-yellow);
     -webkit-font-smoothing: antialiased;
@@ -128,7 +128,7 @@ img {
 }
 
 #hamburger-menu li {
-    padding: 1rem 0;
+    padding: 2rem 0;
     font-size: 4rem;
 }
 
@@ -136,7 +136,12 @@ img {
     transform: none;
 }
 
-
+.nav-icon {
+  margin: auto 3rem auto auto;
+  transition: transform 0.3s ease-out;
+  color: var(--main-blue);
+  font-size: 5rem; 
+}
 
 /* Traditional Nav (hidden on mobile) */
 .nav {
@@ -183,7 +188,7 @@ img {
 
 .welcome p {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 600;
   font-style: italic;
   color: var(--main-white);
 }
@@ -279,15 +284,19 @@ input {
     border-radius: 10px;
 }
 
+.end {
+    text-align: end;
+}
+
 #form-submit {
-    margin: auto auto 1rem 2rem;
-    height: 7rem;
-    width: 15rem;
+    margin: auto 2rem 5rem 2rem;
+    height: 10rem;
+    width: 17rem;
     font-size: 3rem;
     font-family: inherit;
-    background: var(--main-pink);
+    background-image: linear-gradient(to right, var(--main-pink), var(--main-yellow) 300%);
     color: var(--main-white);
-    border-radius: 15px;
+    border-radius: 1px;
 }
 
 /* Footer */
