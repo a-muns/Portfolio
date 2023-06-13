@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: auto auto -1rem auto;
   line-height: 1.4;
   scroll-behavior: smooth:
   font-size: 1.8rem;
@@ -32,15 +32,16 @@ a {
   color: var(--main-blue);
 }
 
-img {
-  display: block;
-  width: 20%
+.italics {
+    font-style: italic;
 }
 
 /* Nav */
 
 /* Hamburger Nav HTML/CSS referenced from Erik Terwan (Nov 24, 2015) at https://codepen.io/erikterwan/pen/EVzeRP */
 .hamburger-nav {
+    position: sticky;
+    top: 0;
     padding: 0rem;
     height: 0rem;
     background: var(--main-yellow);
@@ -82,7 +83,7 @@ img {
     height: 0.6rem;
     margin-bottom: 1rem;
     position: relative;
-    background: var(--main-yellow);
+    background: var(--secondary-blue);
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -178,7 +179,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 125vw;
+  height: 100%;
   background-color: var(--main-blue);
 }
 
@@ -195,6 +196,7 @@ img {
 
 /* Projects */
 
+/*
 .gallery {
   padding: 0 0 2vw 0;
   border-top: 1px solid #E8D7FF;
@@ -236,9 +238,49 @@ a.overclick {
     opacity: 0;
     text-indent: -999em;
 }
+
 a.overclick:hover {
     background-color: #fff;
     opacity: 0.12;
+} */
+
+.projects {
+    background: var(--secondary-blue);
+    top: 0;
+}
+
+.projects-header {
+    margin: 0 auto 3rem 5rem;
+    font-size: 3rem;
+}
+
+.projects-item-section {
+    margin: auto 6rem 0 6rem;
+    
+}
+
+.projects-item-section img {
+    width: 75%;
+}
+
+.projects-item-section img:hover {
+    background-color: #fff;
+    opacity: 0.12;
+}
+
+.projects-item-section button {
+    margin: 1rem auto 2rem 1rem;
+    height: 5rem;
+    width: 8rem;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, var(--main-pink), var(--main-yellow) 300%);
+    color: var(--main-white);
+    border-radius: 3px;
+}
+
+.projects-item-button {
+    display: flex;
+    flex-direction:row-reverse;
 }
 
 /* About */
@@ -296,7 +338,7 @@ input {
     font-family: inherit;
     background-image: linear-gradient(to right, var(--main-pink), var(--main-yellow) 300%);
     color: var(--main-white);
-    border-radius: 1px;
+    border-radius: 3px;
 }
 
 /* Footer */
