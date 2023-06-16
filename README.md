@@ -1,0 +1,15 @@
+# Portfolio
+
+Responsive personal portfolio - currently in development.
+Each project highlight features a short description, technologies used, an image, and a link to the GitHub repository.
+
+<em>Created from scratch with HTML, CSS and JavaScript.</em>
+
+Animations and icons from Font Awesome: https://fontawesome.com/
+<br>Hamburger menu style adapted from Eric Terwan: https://codepen.io/erikterwan/pen/EVzeRP
+
+## Links
+LinkedIn: https://www.linkedin.com/in/alexander-muns
+<br>GitHub: https://github.com/a-muns
+<br>Email: a.muns@live.ca
+<br>Cell: +17054413880
