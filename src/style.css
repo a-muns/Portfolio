@@ -246,6 +246,7 @@ a.overclick:hover {
 .projects {
     background: var(--main-yellow);
     color: var(--main-blue);
+    padding-bottom: 0.1rem;
 }
 
 .projects-header {
@@ -298,7 +299,7 @@ a.overclick:hover {
     height: 7rem;
     width: 10rem;
     font-size: 2.5rem;
-    background:  var(--main-blue);
+    background-image: linear-gradient(90deg, var(--main-blue), var(--secondary-blue) 300%);
     color: var(--main-white);
     border-radius: 0.7rem;
 }
@@ -442,4 +443,26 @@ footer {
 .footer-top-arrow:hover {
     transform: translateY(8px); 
     color: var(--main-pink);
+}
+
+/** Media Queries **/
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 900px) {
+      
+}
+
+@media only screen and (min-width: 1800px) {
+    
+}
+
+@media only screen and (orientation: landscape) {
+    
 }
