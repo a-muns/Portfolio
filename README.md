@@ -9,7 +9,8 @@ Animations and icons from Font Awesome: https://fontawesome.com/
 <br>Hamburger menu style adapted from Eric Terwan: https://codepen.io/erikterwan/pen/EVzeRP
 
 ## Links
-LinkedIn: https://www.linkedin.com/in/alexander-muns
+Resume: https://github.com/a-muns/Portfolio/blob/main/src/AlexanderMuns_SoftwareDeveloper.pdf
+<br>LinkedIn: https://www.linkedin.com/in/alexander-muns
 <br>GitHub: https://github.com/a-muns
 <br>Email: a.muns@live.ca
 <br>Cell: +17054413880
