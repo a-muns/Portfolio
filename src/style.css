@@ -255,7 +255,7 @@ a.overclick:hover {
 }
 
 .projects-item {
-    margin: auto auto 8rem auto;
+    margin: auto auto 10rem auto;
 }
 
 .projects-item-section {
@@ -287,6 +287,11 @@ a.overclick:hover {
 .projects-item-section img:hover {
     background-color: #fff;
     opacity: 0.12;
+}
+
+.hyperlink {
+    color: var(--main-pink);
+    text-decoration: underline;
 }
 
 .projects-item-buttons {
@@ -354,11 +359,12 @@ a.overclick:hover {
 .icons8 {
     display: flex;
     justify-content: flex-start;
-    margin: auto auto auto 5rem;
+    margin: auto auto auto 5.2rem;
     font-size: 1.5rem;
 }
 
 .tech-stack-text {
+    margin: 2rem auto auto auto;
     font-size: 1rem;
     font-style: italic;
 }
