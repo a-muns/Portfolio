@@ -339,14 +339,21 @@ a.overclick:hover {
 }
 
 .tech-stack-grid {
+/*
     display: grid;
     gap: 1rem;
     grid-template-columns: auto auto auto auto auto auto;
     grid-auto-rows: 120px;
     margin: auto 5rem 2rem 5rem;
+*/
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    
 }
 
 .card {
+/*
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -358,6 +365,13 @@ a.overclick:hover {
     position: relative;
     font-size: 3rem;
     border-radius: 4px;
+*/
+    flex: 0 0 calc(16.66% - 20px);
+  color: white;
+  padding: 20px;
+    height: 7rem;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .tech-stack-grid img {
