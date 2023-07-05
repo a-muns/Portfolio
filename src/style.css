@@ -366,55 +366,36 @@ radial-gradient(at 18% 57%, hsla(342,0%,100%,1) 0px, transparent 50%);
 }
 
 .tech-stack-grid {
-/*
     display: grid;
-    gap: 1rem;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-auto-rows: 120px;
-    margin: auto 5rem 2rem 5rem;
-*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: auto 1.5rem auto 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 50px;
+    gap: 0.5rem;
 }
 
 .card {
-/*
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    align-items: center;
     font-size: 3rem;
     border-radius: 4px;
-*/
-    height: 2rem;
-  width: 2rem;
-  position: relative;
-  margin: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
-.tech-stack-grid img { 
-    position: absolute;
-  top: 0;
-  left: 0;
-  height: 50%;
-  width: 50%;
-  object-fit: contain;
-  border-radius: 5px;
+.tech-stack-grid img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
-
 .icons8 {
     display: flex;
     justify-content: flex-start;
-    margin: auto auto auto 2rem;
+    margin: 0.5rem auto auto 2rem;
     font-size: 0.7rem;
 }
 
