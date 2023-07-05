@@ -156,6 +156,7 @@ a {
 /* Traditional Nav (hidden on mobile) */
 .nav {
   display: none;
+    position: sticky;
   flex-direction: row;
   justify-content: flex-end;
   background: var(--main-yellow);
@@ -165,6 +166,10 @@ a {
 .nav-menu {
   display: flex;
   margin-right: 2rem;
+}
+
+.nav-contacts {
+    display: inline;
 }
 
 .nav-menu a:hover {
@@ -376,15 +381,14 @@ radial-gradient(at 18% 57%, hsla(342,0%,100%,1) 0px, transparent 50%);
 .card {
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
-    border-radius: 4px;
     overflow: hidden;
     width: 100%;
     height: 100%;
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-size: 3rem;
+    border-radius: 4px;
 }
 
 .tech-stack-grid img {
@@ -395,7 +399,7 @@ radial-gradient(at 18% 57%, hsla(342,0%,100%,1) 0px, transparent 50%);
 .icons8 {
     display: flex;
     justify-content: flex-start;
-    margin: 0.5rem auto auto 2rem;
+    margin: 2rem auto auto 2rem;
     font-size: 0.7rem;
 }
 
@@ -504,19 +508,28 @@ footer {
 
 /** Media Queries **/
 
+/* Desktop */
 @media all and (max-width: 1200px) {
     #btn-form-submit {
         color: var(--main-blue);
     }
 }
 
+/* Laptop */
 @media all and (max-width: 1024px) {
     #btn-form-submit {
         color: pink;
     }
 }
 
+/* Tablet */
 @media all and (max-width: 768px) {
+    .hamburger-nav {
+        display: none;
+    }
+    .nav {
+        display: block;
+    }
     #btn-form-submit {
         color: white;
     }
