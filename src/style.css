@@ -146,7 +146,7 @@ a {
     transform: none;
 }
 
-.nav-icon {
+.hamburger-nav-icon {
   margin: auto 1rem auto auto;
   transition: transform 0.3s ease-out;
   color: var(--main-blue);
@@ -154,27 +154,31 @@ a {
 }
 
 /* Traditional Nav (hidden on mobile) */
+
 .nav {
   display: none;
-    position: sticky;
-  flex-direction: row;
-  justify-content: flex-end;
+    justify-content: space-between;
+  width: 100%;
   background: var(--main-yellow);
   color: var(--main-blue);
 }
 
-.nav-menu {
+.nav-hrefs {
   display: flex;
   margin-right: 2rem;
 }
 
-.nav-contacts {
-    display: inline;
+.nav-hrefs li {
+    margin: auto 2rem auto auto;
+    font-size: 1.25rem;
 }
 
-.nav-menu a:hover {
-  background: #FFFED6;
-  border-radius: 5px;
+.nav-contacts {
+    display: flex;
+}
+
+.nav-contacts li {
+    font-size: 1rem;
 }
 
 .nav-menu a {
@@ -184,6 +188,11 @@ a {
   font-weight: 600;
 }
 
+.nav-icon {
+  margin: auto 1rem auto auto;
+  color: var(--main-blue);
+  font-size: 2rem; 
+}
 
 /* Welcome */
 
@@ -477,11 +486,6 @@ footer {
   text-shadow: 1px 1px 1px #404006;  
 }
 
-.contact-icon:hover {
-  transform: translateY(8px); 
-  color: var(--main-pink);
-}
-
 .footer-top {
     display: flex;
     justify-content: center;
@@ -501,37 +505,56 @@ footer {
     color: var(--main-yellow);
 }
 
-.footer-top-arrow:hover {
-    transform: translateY(8px); 
-    color: var(--main-pink);
-}
+
 
 /** Media Queries **/
 
-/* Desktop */
-@media all and (max-width: 1200px) {
-    #btn-form-submit {
-        color: var(--main-blue);
-    }
-}
-
-/* Laptop */
-@media all and (max-width: 1024px) {
-    #btn-form-submit {
-        color: pink;
-    }
-}
-
 /* Tablet */
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) {
     .hamburger-nav {
         display: none;
     }
+    
     .nav {
-        display: block;
+        display: flex;
+        position: sticky;
     }
+    
+    
+    
     #btn-form-submit {
         color: white;
+    }
+    
+    
+}
+
+/* Laptop */
+@media all and (min-width: 1024px) {
+        
+    .nav a:hover {
+        color: var(--main-pink);
+    }
+    
+    #btn-form-submit {
+        color: pink;
+    }
+    
+    .contact-icon:hover {
+        transform: translateY(-5px); 
+        color: var(--main-pink);
+    }
+    
+    .footer-top-arrow:hover {
+        transform: translateY(-3px); 
+        color: var(--main-pink);
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 1200px) {
+    #btn-form-submit {
+        color: var(--main-blue);
     }
 }
 
