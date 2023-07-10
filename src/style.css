@@ -220,63 +220,18 @@ a {
 
 /* Projects */
 
-/*
-.gallery {
-  padding: 0 0 2vw 0;
-  border-top: 1px solid #E8D7FF;
-  background: var(--main-white);
-}
-
-.gallery h3 {
-  text-align: center;
-  font-size: 10vw;
-  color: var(--main-blue);
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    font-size: 3rem;
-    border-radius: 4px;
-}
-
-.photo-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-auto-rows: 240px;
-}
-
-a.overclick {
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    opacity: 0;
-    text-indent: -999em;
-}
-
-a.overclick:hover {
-    background-color: #fff;
-    opacity: 0.12;
-} */
-
 .projects {
     background-color:hsla(57,100%,71%,1);
 background-image:
-radial-gradient(at 19% 100%, hsla(110,0%,100%,1) 0px, transparent 50%),
-radial-gradient(at 55% 99%, hsla(148,0%,100%,1) 0px, transparent 50%),
-radial-gradient(at 87% 100%, hsla(78,0%,100%,1) 0px, transparent 50%),
-radial-gradient(at 37% 83%, hsla(145,0%,100%,1) 0px, transparent 50%),
-radial-gradient(at 66% 51%, hsla(104,0%,100%,1) 0px, transparent 50%),
-radial-gradient(at 36% 22%, hsla(2,0%,100%,1) 0px, transparent 50%);
+radial-gradient(at 81% 48%, hsla(209,0%,100%,1) 0px, transparent 50%),
+radial-gradient(at 76% 100%, hsla(209,0%,100%,1) 0px, transparent 50%),
+radial-gradient(at 62% 99%, hsla(210,0%,100%,1) 0px, transparent 50%),
+radial-gradient(at 47% 99%, hsla(210,0%,100%,1) 0px, transparent 50%),
+radial-gradient(at 90% 100%, hsla(211,0%,100%,1) 0px, transparent 50%),
+radial-gradient(at 8% 100%, hsla(8,0%,100%,1) 0px, transparent 50%),
+radial-gradient(at 36% 72%, hsla(145,0%,100%,1) 0px, transparent 50%),
+radial-gradient(at 29% 100%, hsla(104,0%,100%,1) 0px, transparent 50%),
+radial-gradient(at 35% 15%, hsla(2,0%,100%,1) 0px, transparent 50%);
     color: var(--main-blue);
     padding-bottom: 0.1rem;
 }
@@ -291,6 +246,10 @@ radial-gradient(at 36% 22%, hsla(2,0%,100%,1) 0px, transparent 50%);
     font-size: 1.1rem;
 }
 
+.projects-title-flex {
+    display: none;
+}
+
 .projects-item {
     margin: auto auto 2rem auto;
 }
@@ -300,7 +259,8 @@ radial-gradient(at 36% 22%, hsla(2,0%,100%,1) 0px, transparent 50%);
 }
 
 .projects-item-bkg {
-    background-image: linear-gradient(135deg, var(--secondary-blue), var(--main-blue) 110%);
+    background: black;
+/*    background-image: linear-gradient(135deg, var(--secondary-blue), var(--main-blue) 110%);*/
     border-radius: 0.5rem;
 }
 
@@ -309,20 +269,15 @@ radial-gradient(at 36% 22%, hsla(2,0%,100%,1) 0px, transparent 50%);
 }
 
 .projects-img-portrait {
-    margin: auto auto auto 1rem;
+    margin:  1rem;
     width: 90%;
 }
 
 .projects-img-landscape {
-    margin: auto auto auto 1rem;
+    margin: 1rem;
     width: 90%;
     height: 20%;
     object-fit: cover;
-}
-
-.projects-item-section img:hover {
-    background-color: #fff;
-    opacity: 0.12;
 }
 
 .hyperlink {
@@ -460,7 +415,7 @@ input {
     font-size: 1.5rem;
     font-family: inherit;
     background-image: linear-gradient(to right, var(--main-pink), var(--main-yellow) 300%);
-    color: var(--main-blue);
+    color: var(--main-white);
     border-radius: 0.4rem;
     cursor: pointer;
 }
@@ -517,10 +472,40 @@ footer {
     
     .nav {
         display: flex;
-        position: sticky;
+        position: fixed;
+    }
+    
+    .projects-title {
+        display: none;
+    }
+    
+    .projects-title-flex {
+        display: block;
+        margin: 3rem auto 1rem auto;
+        font-size: 1.1rem;
+    }
+    
+    .projects-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .projects-item-section {
+        margin: auto;
+        max-width: 20rem;
+        
+        align-items:flex-start
     }
     
     
+    .projects-item-section p {
+        text-align: start;
+    }
+    
+    tech-stack-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
     
     #btn-form-submit {
         color: white;
@@ -538,6 +523,11 @@ footer {
     
     #btn-form-submit {
         color: pink;
+    }
+    
+    .projects-item-section img:hover {
+        background-color: #fff;
+        opacity: 0.12;
     }
     
     .contact-icon:hover {
