@@ -258,26 +258,24 @@ radial-gradient(at 35% 15%, hsla(2,0%,100%,1) 0px, transparent 50%);
     margin: auto 2rem 0 2rem;
 }
 
-.projects-item-bkg {
-    background: black;
-/*    background-image: linear-gradient(135deg, var(--secondary-blue), var(--main-blue) 110%);*/
-    border-radius: 0.5rem;
-}
-
 .projects-item-section h3 {
     font-size: 1rem;
 }
 
 .projects-img-portrait {
-    margin:  1rem;
-    width: 90%;
+    margin: auto auto auto 1rem;
+    height: 40%;
+    object-fit: center;
+    border: 5px solid black;
+    border-radius: 5px;
 }
 
 .projects-img-landscape {
-    margin: 1rem;
-    width: 90%;
+    width: 100%;
     height: 20%;
-    object-fit: cover;
+    object-fit: center;
+    border: 5px solid black;
+    border-radius: 5px;
 }
 
 .hyperlink {
@@ -494,10 +492,17 @@ footer {
     .projects-item-section {
         margin: auto;
         max-width: 20rem;
-        
         align-items:flex-start
     }
     
+    .projects-img-portrait {
+        margin: auto auto auto 3rem;
+        width: 70%;
+    }
+    
+    .projects-item-buttons {
+        margin: auto 1rem auto auto;
+    }
     
     .projects-item-section p {
         text-align: start;
