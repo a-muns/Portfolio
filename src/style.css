@@ -286,7 +286,6 @@ radial-gradient(at 35% 15%, hsla(2,0%,100%,1) 0px, transparent 50%);
 .projects-item-buttons {
     display: flex;
     flex-direction:row-reverse;
-    cursor: pointer;
 }
 
 .projects-item-section button {
@@ -297,6 +296,7 @@ radial-gradient(at 35% 15%, hsla(2,0%,100%,1) 0px, transparent 50%);
     background-image: linear-gradient(90deg, var(--main-blue), var(--secondary-blue) 300%);
     color: white;
     border-radius: 0.2rem;
+    cursor: pointer;
 }
 
 .ft1 {
@@ -600,6 +600,11 @@ footer {
         margin: auto 10rem 2rem 10rem;
     }
     
+    .projects-item-buttons button:hover {
+        background-color: #fff;
+        opacity: 0.8;
+    }
+    
     .about-container {
         margin: 1rem 5rem 1rem 5rem;
     }
@@ -675,7 +680,7 @@ footer {
 @media all and (min-width: 1200px) {
     
     .projects-item {
-        margin: auto 20rem 4rem 20rem;
+        margin: auto 15rem 4rem 15rem;
     }
     
     .tech-stack-grid {
@@ -689,6 +694,10 @@ footer {
 @media all and (min-width: 1800px) {
     .projects-item {
         margin: auto 30rem 4rem 30rem;
+    }
+    
+    .about-container {
+        margin: 2rem 15rem;
     }
 }
 
