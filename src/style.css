@@ -35,6 +35,11 @@ a {
     font-style: italic;
 }
 
+.hidden {
+    visibility: hidden;
+    max-height: 0;
+}
+
 .underline {
     text-decoration: underline;
 }
@@ -45,7 +50,7 @@ a {
 
 /* Nav */
 
-/* Hamburger Nav HTML/CSS referenced from Erik Terwan (Nov 24, 2015) at https://codepen.io/erikterwan/pen/EVzeRP */
+/* Hamburger Nav HTML/CSS adapted from Erik Terwan (Nov 24, 2015) at https://codepen.io/erikterwan/pen/EVzeRP */
 .hamburger-nav {
     position: sticky;
     top: 0;
@@ -672,7 +677,7 @@ footer {
     
     .footer-copyright{
         color: var(--main-blue);
-        height: 2rem;
+        height: 3.5rem;
         margin: 0;
         font-size: 1rem;
         text-align: center;
@@ -701,6 +706,10 @@ footer {
     
     form {
         width: 35rem;
+    }
+    
+    .footer-copyright{
+        height: 3.5rem;
     }
 }
 
