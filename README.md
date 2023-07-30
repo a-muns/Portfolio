@@ -1,6 +1,6 @@
 # Portfolio
 
-Responsive personal portfolio .
+Responsive personal portfolio.
 Each project highlight features a short description, technologies used, an image, and a link to the GitHub repository.
 
 <em>Created from scratch with HTML, CSS and JavaScript.</em>
