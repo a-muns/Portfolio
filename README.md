@@ -1,11 +1,11 @@
 # Portfolio
 
-Responsive personal portfolio - currently in development.
+Responsive personal portfolio .
 Each project highlight features a short description, technologies used, an image, and a link to the GitHub repository.
 
 <em>Created from scratch with HTML, CSS and JavaScript.</em>
 
-Animations and icons from Font Awesome: https://fontawesome.com/
+Animations and icons from Font Awesome and icons8: https://fontawesome.com/ | https://icons8.com/
 <br>Hamburger menu style adapted from Eric Terwan: https://codepen.io/erikterwan/pen/EVzeRP
 
 ## Links
