@@ -635,7 +635,7 @@ footer {
         margin: auto 10rem 2rem 10rem;
     }
     
-    .projects-item-buttons button:hover {
+    .projects-item-buttons a:hover {
         background-color: #fff;
         opacity: 0.8;
     }
