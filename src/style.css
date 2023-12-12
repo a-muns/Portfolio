@@ -51,6 +51,8 @@ a {
 /* Nav */
 
 /* Hamburger Nav HTML/CSS adapted from Erik Terwan (Nov 24, 2015) at https://codepen.io/erikterwan/pen/EVzeRP */
+
+
 .hamburger-nav {
     position: sticky;
     top: 0;
@@ -102,6 +104,10 @@ a {
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
+}
+
+#test {
+    background: var(--main-white);
 }
 
 
